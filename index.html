@@ -9,6 +9,66 @@
     <title></title>
   </head>
   <body>
-    <h1> Hi! </h1>
+    <div class="container">
+      <div class="jumbotron board">
+        <h1>Pig Dice</h1>
+      </div>
+      <form id="enter-name">
+        <label for="enter-player1">Enter player one's name:</label>
+        <input type="text" id="player1-name">
+        <label for="enter-player1">Enter player two's name:</label>
+        <input type="text" id="player2-name">
+
+        <button type="submit" name="submit-name">Submit</button>
+      </form>
+      <div id="pig-dice" class="hide">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="die-roll-display">
+              <h4>Roll the die!</h4>
+              <div id="die-image">
+              </div>
+              <p> Result: <span id="die-roll-result"></span></p>
+              <button type="button" class="btn btn-outline-success" id="die-roll-button">Roll</button>
+              <button type="button" class="btn btn-outline-danger" id="die-hold-button">Hold</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="well">
+              <div class="player">
+                <p>Name: <span id="player-1-name"></span></p>
+                <p>Current Round Score: <span id="player-1-round-score"></span></p>
+                <p>Game Score: <span id="player-1-game-total"</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="well" id="active-player-panel">
+              <h4> Active player </h4>
+              <span id="active-player-arrow"></span>
+              <p><span id="active-player-name"></span></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="well">
+              <div class="player">
+                <p>Name: <span id="player-2-name"></span></p>
+                <p>Current Round Score: <span id="player-2-round-score"></span></p>
+                <p>Game Score: <span id="player-2-game-total"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="well" id="winner">
+            <h3><span id="winner-name"></span></h3>
+            <h4>is the winner!</h4>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
