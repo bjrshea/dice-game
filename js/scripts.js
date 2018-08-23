@@ -9,18 +9,21 @@ var playerOne = {
   name: "Player One",
   currentRd: 0,
   gameTotal: 0,
+  computerPlayer: false
 };
 
 var playerTwo = {
   name: "Player Two",
   currentRd: 0,
   gameTotal: 0,
+  computerPlayer: false
 };
 
-function Player(name) {
+function Player(name, cpu) {
   this.name = name;
   this.currentRd = 0;
   this.gameTotal = 0;
+  this.computerPlayer = cpu;
 }
 
 function switchCurrentPlayer(player1, player2, activePlayer) {
@@ -54,10 +57,20 @@ function changePlayerDisplay(player1, player2, activePlayer) {
 $(document).ready(function() {
   $("#enter-name").submit(function(event) {
     event.preventDefault();
+
     var player1Name = $("#player1-name").val();
     var player2Name = $("#player2-name").val();
     playerOne.name = player1Name;
     playerTwo.name = player2Name;
+    var player1cpu = $("input[type=checkbox][name=player-1-cpu]:checked").val();
+    var player2cpu = $("input[type=checkbox][name=player-2-cpu]:checked").val();
+    if (player1cpu === "true") {
+      playerOne.computerPlayer = true;
+    }
+    if (player2cpu === "true") {
+      playerTwo.computerPlayer = true;
+    }
+    console.log(playerOne.computerPlayer, playerTwo.computerPlayer);
     $("#player-1-name").text(playerOne.name);
     $("#active-player-name").text(playerOne.name);
     $("#player-2-name").text(playerTwo.name);
