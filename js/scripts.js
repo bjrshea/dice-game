@@ -130,9 +130,22 @@ $(document).ready(function() {
     if (currentPlayer.gameTotal >= 100) {
       $("#winner-name").text(currentPlayer.name);
       $("#winner").show();
+      $("#die-roll-button").hide();
+      $("#die-hold-button").hide();
     }
 
     currentPlayer = switchCurrentPlayer(playerOne, playerTwo, currentPlayer);
     changePlayerDisplay(playerOne, playerTwo, currentPlayer);
+  })
+  $("#play-again-button").click(function() {
+    playerOne.currentRd = playerTwo.currentRd = 0;
+    playerOne.gameTotal = playerTwo.gameTotal = 0;
+    currentPlayer = playerOne;
+    changePlayerDisplay(playerOne, playerTwo, currentPlayer);
+    $("#die-roll-button").show();
+    $("#die-hold-button").show();
+    $("#player-1-game-total").text("0");
+    $("#player-2-game-total").text("0");
+    $("#winner").hide();
   })
 })

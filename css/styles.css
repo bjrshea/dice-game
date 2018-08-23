@@ -88,3 +88,8 @@ h4 {
 #winner {
   display: none;
 }
+
+#play-again-button {
+  display: block;
+  margin: 0 auto;
+}
