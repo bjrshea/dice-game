@@ -5,21 +5,19 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Pig Dice (single die)</title>
+    <script src="js/scripts2.js"></script>
+    <title>Pig Dice (two dice)</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron board">
-        <h1>Pig Dice (single die)</h1>
+        <h1>Pig Dice (two dice)</h1>
       </div>
       <form id="enter-name">
         <label for="enter-player1">Enter player one's name:</label>
         <input type="text" id="player1-name">
-        <input type="checkbox" class="computer-check" name="player-1-cpu" value="true">Is this player a computer player?<br>
         <label for="enter-player1">Enter player two's name:</label>
         <input type="text" id="player2-name">
-        <input type="checkbox" class="computer-check" name="player-2-cpu" value="true">Is this player a computer player?<br>
 
         <button type="submit" name="submit-name">Submit</button>
       </form>
@@ -27,8 +25,7 @@
         <div class="row">
           <div class="col-md-12" id="die-roll-display">
             <h4>Roll the die!</h4>
-            <div id="die-image">
-            </div>
+            <p id="dice"></p>
             <p> Result: <span id="die-roll-result"></span></p>
             <button type="button" class="btn btn-outline-success" id="die-roll-button">Roll</button>
             <button type="button" class="btn btn-outline-danger" id="die-hold-button">Hold</button>

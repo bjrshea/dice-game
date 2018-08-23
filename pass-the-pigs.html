@@ -5,26 +5,32 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Pig Dice (single die)</title>
+    <script src="js/scripts3.js"></script>
+    <title>Pass the Pigs!</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron board">
-        <h1>Pig Dice (single die)</h1>
+        <h1>Pass the Pigs!</h1>
       </div>
       <form id="enter-name">
         <label for="enter-player1">Enter player one's name:</label>
         <input type="text" id="player1-name">
-        <input type="checkbox" class="computer-check" name="player-1-cpu" value="true">Is this player a computer player?<br>
         <label for="enter-player1">Enter player two's name:</label>
         <input type="text" id="player2-name">
-        <input type="checkbox" class="computer-check" name="player-2-cpu" value="true">Is this player a computer player?<br>
 
         <button type="submit" name="submit-name">Submit</button>
       </form>
       <div id="pig-dice" class="hide">
         <div class="row">
+          <div class="col-md-12" id="pass-the-pig-rules">
+            <div class="">
+              <h5 class="rule-clicker">Click here to check out the Pass the Pigs rules!</h5>
+            </div>
+            <div class="pass-the-pig-rules-content">
+              <img id="pigs-image" src="img/pigs.png" alt="picture of rules">
+            </div>
+          </div>
           <div class="col-md-12" id="die-roll-display">
             <h4>Roll the die!</h4>
             <div id="die-image">

@@ -1,3 +1,6 @@
+.pass-the-pig-rules-content {
+  display: none;
+}
 .hide {
   display: none;
 }
@@ -41,6 +44,7 @@
   border-color: black;
   padding: 5px;
 }
+
 h3 {
   font-size: 30pt;
   text-align: center;
@@ -50,7 +54,14 @@ h4 {
   font-size: 24pt;
   text-align: center;
 }
-
+h5 {
+  text-align: center;
+}
+#pigs-image{
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
 #die-roll-display p {
   text-align: center;
 }
