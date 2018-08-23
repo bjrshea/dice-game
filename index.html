@@ -25,15 +25,13 @@
       </form>
       <div id="pig-dice" class="hide">
         <div class="row">
-          <div class="col-md-12">
-            <div id="die-roll-display">
-              <h4>Roll the die!</h4>
-              <div id="die-image">
-              </div>
-              <p> Result: <span id="die-roll-result"></span></p>
-              <button type="button" class="btn btn-outline-success" id="die-roll-button">Roll</button>
-              <button type="button" class="btn btn-outline-danger" id="die-hold-button">Hold</button>
+          <div class="col-md-12" id="die-roll-display">
+            <h4>Roll the die!</h4>
+            <div id="die-image">
             </div>
+            <p> Result: <span id="die-roll-result"></span></p>
+            <button type="button" class="btn btn-outline-success" id="die-roll-button">Roll</button>
+            <button type="button" class="btn btn-outline-danger" id="die-hold-button">Hold</button>
           </div>
         </div>
         <div class="row">
@@ -42,6 +40,7 @@
               <div class="player">
                 <p>Name: <span id="player-1-name"></span></p>
                 <p>Current Round Score: <span id="player-1-round-score"></span></p>
+                <p>Roll sequence for this round: <span id="player-1-rolls"></span></p>
                 <p>Game Score: <span id="player-1-game-total"</span></p>
               </div>
             </div>
@@ -58,6 +57,7 @@
               <div class="player">
                 <p>Name: <span id="player-2-name"></span></p>
                 <p>Current Round Score: <span id="player-2-round-score"></span></p>
+                <p>Roll sequence for this round: <span id="player-2-rolls"></span></p>
                 <p>Game Score: <span id="player-2-game-total"></span></p>
               </div>
             </div>
